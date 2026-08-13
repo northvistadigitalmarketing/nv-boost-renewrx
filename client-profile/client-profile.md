@@ -18,7 +18,7 @@
 
 ## Business Summary
 
-RenewRX — https://getrenewrx.com/. _Further business summary to be populated during Discover._
+RenewRX (dba RenewRx) — https://getrenewrx.com/. Clinician-led hormone therapy, medical weight loss (GLP-1: semaglutide/tirzepatide), and peptide protocols. Single clinic at 6065 S. Highland Dr. Suite 1, Holladay, UT 84121, plus telehealth patients in 38 states. Phone (801) 893-6725 · support@getrenewrx.com. ~2,500+ patients treated; 5.0-star rating on 39 Google reviews; LegitScript verified; medications sourced from licensed 503A compounding pharmacies; labs rechecked every 90 days.
 
 ## Scope of Work
 
@@ -37,7 +37,7 @@ RenewRX — https://getrenewrx.com/. _Further business summary to be populated d
 
 ## Brand & Voice Notes
 
-_Populated by first content deliverable; refined over time._
+Clinical, direct, credibility-forward, slightly contrarian ("not a prescription mill, not an algorithm"), evidence-led (labs/licensure over hype). Recurring pillars: "Lab-guided care from licensed providers," "We recheck labs every 90 days," "Bridging the gap between patients and real clinical care." Visual brand colors and typography could not be extracted from the live site this run (see campaigns/2026-08-13-paid-ads-conversion-landing-page-draft.html header comment) — fallback tokens used; a real CSS/brand-asset pull is still owed before any page goes live.
 
 ## Delivery Log
 
@@ -45,6 +45,7 @@ _Populated by first content deliverable; refined over time._
 |---|---|---|---|---|---|
 | 2026-08-13 | Boost Engine | Provisioning (repo + Pages) | this commit | — | done |
 | 2026-08-13 | Boost Engine | Signed MSA/SOW filed · docset: NVM_Contract_RenewRX_07292026.pdf | — | CEC_auto_e41110dd-5fbc-4266-b0ca-6d3347dc4208 | done |
+| 2026-08-13 | Paid Ads | Conversion landing page draft (D6, GLP-1 Weight Loss, Holladay UT) — campaigns/2026-08-13-paid-ads-conversion-landing-page-draft.html | this commit | — | draft — NOT published (real-client-publishing hard gate unresolved; brand colors/fonts are fallback, pending real CSS pull) |
 
 <!-- Delivery Log schema v2 (2026-07-10):
   Commit = git SHA of the delivering commit, or "—" when the deliverable produced no git artifact.
