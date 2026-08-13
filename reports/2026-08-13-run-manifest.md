@@ -16,6 +16,15 @@
 | Enable Pages (main, /docs) | Success |
 | Pages build verification | run 31735703804 — completed / success |
 
+## Step 1 — Contract intake filing (RESOLVED 2026-08-13, later same day)
+
+- Blocked earlier this run (no device folder connected to stage the PDF to the local machine running Krista's upload tool).
+- User connected folder `/Users/taylortabile/Krista Test`; PDF staged there, then `krista_upload_file` → `krista_skill_nv-contract-intake-filer` → `krista_skill_krista-docset-filer`.
+- **Docset override:** requested `nv-boost-renewrx`, filed to `north-vista-marketing` per the filer's v0.3.0 single-doc-set policy (2026-08-13 direction, N. Grant) — all North Vista filings now land in one agency-wide doc set.
+- Add Document conversation `CEC_auto_e41110dd-5fbc-4266-b0ca-6d3347dc4208` — completed. Two benign `fromIndex = -1` submit errors during PDF indexing (documented behavior — status polled instead of blind-retrying).
+- Read-back verified via `answer_question(north-vista-marketing, …)` — correctly cited `NVM_Contract_RenewRX_07292026.pdf` with fee/term/effective-date detail.
+- Logged to Delivery Log (client-profile.md) in the same-day filing commit.
+
 ## Deliverables spec (Scope of Work → resolution)
 
 | ID | Contract line | Class | Tier | Resolution | Decision | Blocker |
@@ -33,10 +42,6 @@
 - D1, D2, D7 have no resolved Krista conversation in the current agent/skill catalog for initial setup — flagged for a follow-up build (likely under the GoHighLevel Business Automation Agent or Onboarding Agent, both currently low/no conversation history).
 - D3 recurring cadence needs a Krista-native schedule once gbp-optimizer is explicitly invoked for this client.
 
-## Blocked
-
-- **Contract intake filing (Step 1, nv-contract-intake-filer → krista-docset-filer):** the signed PDF lives in the Claude session workspace, not on a path the Krista media-store upload tool can reach (no device folder connected to stage it onto the local machine this session runs through). Filing did not happen. To complete: either connect a folder so the PDF can be staged locally, or file it directly from a session that has local access to the file.
-
 ## Hard gates — untouched this run (require explicit per-item approval)
 
 1. Real ad spend / campaign creation (Google Ads, Meta) — D4, D5.
@@ -49,4 +54,3 @@ None of the above were pre-approved in this run's invocation, so none were execu
 
 - Confirm whether to proceed with drafting (not publishing) the landing page (D6) and ad copy (D4/D5) now — these are draft-only and don't touch spend or go live.
 - Decide who/what resolves the CRM Workspace, dashboard, and call-tracking setup (D1, D2, D7) — no existing Krista conversation matched cleanly.
-- Provide a way to file the signed contract into the `nv-boost-renewrx` doc set (needs local file access on the machine running Krista's file upload).
