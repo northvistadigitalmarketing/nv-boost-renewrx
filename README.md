@@ -1,11 +1,11 @@
-# {{CUSTOMER_NAME}} — NVM Boost
+# RenewRX — NVM Boost
 
 Client delivery workspace. Created and maintained by Krista.
 
-- **Client:** {{CUSTOMER_NAME}}
-- **Slug:** {{CUSTOMER_SLUG}}
-- **Domain:** {{DOMAIN}}
-- **Active Lines:** {{ACTIVE_LINES}}
+- **Client:** RenewRX
+- **Slug:** renewrx
+- **Domain:** getrenewrx.com
+- **Active Lines:** Local Visibility (GBP & Lead Tracking), Paid Ads (Lead Generation)
 
 ## What's where
 
@@ -25,6 +25,6 @@ Client delivery workspace. Created and maintained by Krista.
 ## Conventions (for Krista and anyone filing manually)
 
 - Krista commits directly to `main`. No branches, no PRs.
-- Commit message format: `[<Line Name>] <description> – YYYY-MM-DD`
+- Commit message format: `[<Line Name>] <description> — YYYY-MM-DD`
 - Multi-file deliverables land as one atomic commit.
 - Placeholder tokens (`{{...}}`) are resolved by Krista at provisioning time.

@@ -1,18 +1,39 @@
-# Client Profile — {{CUSTOMER_NAME}}
+# Client Profile — RenewRX
 
 > Read/written by Boost skills. Krista appends; humans read.
 
 ## Profile
 
-- **Client:** {{CUSTOMER_NAME}}
-- **Slug:** {{CUSTOMER_SLUG}}
-- **Domain:** {{DOMAIN}}
-- **Provisioned:** {{PROVISIONED_DATE}}
-- **Active Lines:** {{ACTIVE_LINES}}
+- **Client:** RenewRX
+- **Slug:** renewrx
+- **Domain:** getrenewrx.com
+- **Provisioned:** 2026-08-13
+- **Active Lines:** Local Visibility (GBP & Lead Tracking), Paid Ads (Lead Generation)
+
+## Agreement (sanitized — public repo)
+
+- **Agreement No.:** NV-2026-RNWRX
+- **Effective Date:** 2026-07-31 · **Initial Term:** 3 months, then month-to-month
+- Full commercial terms (fee, billing, signatory contact info) are sealed in the signed MSA/SOW. That document is intended to be filed in the client doc set (`nv-boost-renewrx`) per the sanitization protocol — not reproduced here. **Filing pending:** the signed PDF lives in the session workspace and could not yet be staged to Krista's media store (see run manifest).
 
 ## Business Summary
 
-_Populated at intake._
+RenewRX — https://getrenewrx.com/. _Further business summary to be populated during Discover._
+
+## Scope of Work
+
+**Local Visibility — Google Business Profile and Lead Tracking**
+- CRM Workspace
+- Live reporting dashboard
+- Google Business Profile optimization
+
+**Paid Ads — Lead Generation**
+- Paid Google search ads
+- Paid Meta ads (Facebook + Instagram)
+- Conversion landing page
+- Call tracking for lead attribution
+
+**Process:** 01 Discover → 02 Build → 03 Grow.
 
 ## Brand & Voice Notes
 
@@ -22,6 +43,7 @@ _Populated by first content deliverable; refined over time._
 
 | Date | Line | Deliverable | Commit | Krista Execution | Status |
 |---|---|---|---|---|---|
+| 2026-08-13 | Boost Engine | Provisioning (repo + Pages) | this commit | — | done |
 
 <!-- Delivery Log schema v2 (2026-07-10):
   Commit = git SHA of the delivering commit, or "—" when the deliverable produced no git artifact.
