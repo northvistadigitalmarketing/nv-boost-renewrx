@@ -37,7 +37,24 @@ RenewRX (dba RenewRx) — https://getrenewrx.com/. Clinician-led hormone therapy
 
 ## Brand & Voice Notes
 
-Clinical, direct, credibility-forward, slightly contrarian ("not a prescription mill, not an algorithm"), evidence-led (labs/licensure over hype). Recurring pillars: "Lab-guided care from licensed providers," "We recheck labs every 90 days," "Bridging the gap between patients and real clinical care." Visual brand colors and typography could not be extracted from the live site this run (see campaigns/2026-08-13-paid-ads-conversion-landing-page-draft.html header comment) — fallback tokens used; a real CSS/brand-asset pull is still owed before any page goes live.
+Clinical, direct, credibility-forward, slightly contrarian ("not a prescription mill, not an algorithm"), evidence-led (labs/licensure over hype). Recurring pillars: "Lab-guided care from licensed providers," "We recheck labs every 90 days," "Bridging the gap between patients and real clinical care."
+
+### Brand block (authoritative — Brand Source Of Truth ladder, local-landing-page-builder v1.2.0)
+
+Extracted 2026-08-14 via the governed `audit_brand_dna` request (Landing Page Builder extension, invoker INV_5e3cbc3d; `Palette Fallback: false`, `Font Fallback: false`). Supersedes the 2026-08-13 note that brand tokens could not be extracted.
+
+```json
+"brand": {
+  "primary": "#c9a96e", "secondary": "#0b5d6e",
+  "neutral_dark": "#1a1a1a", "neutral_light": "#ffffff",
+  "highlight": "#0b5d6e",
+  "heading_font": "IBM Plex Mono", "body_font": "Inter",
+  "logo_url": null,
+  "source": "extracted 2026-08-14 (audit_brand_dna)"
+}
+```
+
+Not yet surfaced by the request (open extension item): logo URL, hero image URL, provider headshots — drafts use a styled text wordmark and brand-colored hero treatment until supplied.
 
 ## Delivery Log
 
@@ -46,6 +63,7 @@ Clinical, direct, credibility-forward, slightly contrarian ("not a prescription 
 | 2026-08-13 | Boost Engine | Provisioning (repo + Pages) | this commit | — | done |
 | 2026-08-13 | Boost Engine | Signed MSA/SOW filed · docset: NVM_Contract_RenewRX_07292026.pdf | — | CEC_auto_e41110dd-5fbc-4266-b0ca-6d3347dc4208 | done |
 | 2026-08-13 | Paid Ads | Conversion landing page draft (D6, GLP-1 Weight Loss, Holladay UT) — campaigns/2026-08-13-paid-ads-conversion-landing-page-draft.html | this commit | — | draft — NOT published (real-client-publishing hard gate unresolved; brand colors/fonts are fallback, pending real CSS pull) |
+| 2026-08-14 | Paid Ads | Conversion landing page draft v2 (D6, REAL brand tokens via audit_brand_dna; hybrid skill+request build) — campaigns/2026-08-14-paid-ads-conversion-landing-page-draft.html · docset: renewrx-landing-page-draft-2026-08-14.txt | 0fed5e548a52a595d4d5357024b60c8aad6d49ce | — | draft — NOT published (real-client-publishing hard gate awaits approval; brand tokens REAL — supersedes 08-13 fallback draft) |
 
 <!-- Delivery Log schema v2 (2026-07-10):
   Commit = git SHA of the delivering commit, or "—" when the deliverable produced no git artifact.
